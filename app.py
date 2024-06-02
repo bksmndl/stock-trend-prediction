@@ -89,6 +89,9 @@ if st.button('Predict Stock Trend'):
     y_predicted = y_predicted * scale_factor
     y_test = y_test * scale_factor
 
+    # Map indices to dates
+    test_dates = df.index[int(len(df)*0.70):]
+
     # Final Graph
     st.subheader('Predicted vs Original')
 
