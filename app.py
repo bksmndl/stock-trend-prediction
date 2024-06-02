@@ -93,8 +93,8 @@ if st.button('Predict Stock Trend'):
     st.subheader('Predicted vs Original')
 
     fig2 = plt.figure(figsize=(14, 8))
-    plt.plot(y_test, color='blue', linestyle='-', linewidth=2.5, label='Original Price')
-    plt.plot(y_predicted, color='red', linestyle='--', linewidth=2.5, label='Predicted Price')
+    plt.plot(test_dates, y_test, color='blue', linestyle='-', linewidth=2.5, label='Original Price')
+    plt.plot(test_dates, y_predicted, color='red', linestyle='--', linewidth=2.5, label='Predicted Price')
 
     plt.xlabel('Time', fontsize=14, fontweight='bold', fontname='Arial')
     plt.ylabel('Price', fontsize=14, fontweight='bold', fontname='Arial')
